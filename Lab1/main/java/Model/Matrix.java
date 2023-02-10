@@ -93,12 +93,12 @@ public class Matrix {
             res *= matrix_1[i][i];
         }
 
-        return res;
+        return Math.abs(res);
     }
     public void swapTwoRow( int firstRow, int secondRow) {
         double[][] matrix_1 = this.getMatrix();
         double temp;
-        for(int i = 0; i < this.getDimension(); ++i) {
+        for(int i = 0; i <= this.getDimension(); ++i) {
             temp = matrix_1[firstRow][i];
             matrix_1[firstRow][i] = matrix_1[secondRow][i] ;
             matrix_1[secondRow][i] = temp;

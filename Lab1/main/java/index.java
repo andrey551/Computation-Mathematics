@@ -22,7 +22,7 @@ public class index {
             matrix = getMatrixByFile();
         }
 
-        double[][] result = Seidel.seidelMethod(matrix, 0.1);
+        double[][] result = Seidel.seidelMethod(matrix, 0.01);
         if(result == null) {
             System.out.println("This system has no option or infinity options! ");
         } else {
